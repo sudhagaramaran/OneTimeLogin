@@ -19,17 +19,17 @@ public class Main3Activity extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
    //  MainActivity.editor.putString("Score", String.valueOf(0));
 
-    String x= MainActivity.prefs.getString("Score","1");
-        String y=x;
-        String z=y;
-        MainActivity. editor =MainActivity.prefs.edit();
-        MainActivity.editor.putString("Score", String.valueOf(0));
-        MainActivity.editor.apply();
-        String x1= MainActivity.prefs.getString("Score","0");
-        String y1=x1;
-        String z1=y1;
+   // String x= MainActivity.prefs.getString("Score","1");
+    //    String y=x;
+    //    String z=y;
         MainActivity.editor =MainActivity.prefs.edit();
-        MainActivity.editor.clear();
+        MainActivity.editor.putString("Score", String.valueOf(0));
+      MainActivity.editor.apply();
+    //    String x1= MainActivity.prefs.getString("Score","0");
+     //   String y1=x1;
+     //   String z1=y1;
+     //   MainActivity.editor =MainActivity.prefs.edit();
+      //  MainActivity.editor.clear();
 
     }
 }
